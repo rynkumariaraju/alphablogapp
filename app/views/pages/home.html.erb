@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AlphaBlog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag "application", "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css", "data-turbo-track": "reload" %>
+  <%= stylesheet_link_tag "style" %> <!-- Include your custom CSS file -->
+
+  <style>
+    .jumbotron-bg {
+      background-image: url('<%= asset_path('alpha.jpeg') %>'); /* Inline CSS */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron jumbotron-bg mt-5 text-center text-white">
+      <div class="image-container"></div> <!-- Empty div for background image -->
+      <div class="content-container">
+        <h1 class="display-4">AlphaBlog</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <a class="btn btn-success btn-lg" href="#" role="button">Sign up</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
