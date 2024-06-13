@@ -1,0 +1,59 @@
+
+.flickr_pagination {
+  text-align: center;
+  padding: 0.3em;
+  cursor: default;
+
+  /* Styles for anchor tags, spans, and em elements */
+  a, span, em {
+    padding: 0.2em 0.5em;
+    border-radius: 5px;
+  }
+
+  /* Styles for disabled elements */
+  .disabled {
+    color: #aaaaaa;
+  }
+
+  /* Styles for the currently active page */
+  .current {
+    font-style: normal;
+    font-weight: bold;
+    color: #ff0084;
+  }
+
+  /* Styles for anchor tags */
+  a {
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+    text-decoration: none;
+
+    /* Hover and focus styles */
+    &:hover, &:focus {
+      border-color: gray;
+      background: whitesmoke;
+      color: gray;
+    }
+  }
+
+  /* Styles for page info text */
+  .page_info {
+    color: #aaaaaa;
+    padding-top: 0.8em;
+  }
+
+  /* Styles for previous and next page links */
+  .previous_page, .next_page {
+    border-width: 2px;
+  }
+
+  /* Styles for the previous page link */
+  .previous_page {
+    margin-right: 1em;
+  }
+
+  /* Styles for the next page link */
+  .next_page {
+    margin-left: 1em;
+  }
+}

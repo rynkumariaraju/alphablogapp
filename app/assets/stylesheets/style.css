@@ -20,6 +20,5 @@
   }
   
   .jumbotron-bg {
-    background-image: url('<%= asset_path('alpha.jpeg') %>');
-  }
-  
+    background-image: url('/assets/alpha.jpeg');
+}

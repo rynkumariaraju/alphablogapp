@@ -6,15 +6,26 @@
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
 
-  <%= stylesheet_link_tag "application", "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css", "data-turbo-track": "reload" %>
+  <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Set background image dynamically -->
+
+  <style>
+    body {
+        background-image: url('<%= asset_path('alpha.jpeg') %>');
+    }
+</style>
 
 </head>
 
 <body>
-<%= render 'layouts/navigation' %>
+  <%= render 'layouts/navigation' %>
   <%= render 'layouts/messages' %>
-  <%= javascript_include_tag "application", "https://code.jquery.com/jquery-3.5.1.slim.min.js", "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js", "data-turbo-track": "reload" %>
 
   <%= yield %>
+
+  <%= javascript_include_tag "application", "data-turbo-track": "reload" %>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
